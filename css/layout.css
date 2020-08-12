@@ -1,0 +1,104 @@
+
+
+/* = layout.css
+--------------------------------------------------- */
+
+
+/* = Container
+--------------------------------------------------- */
+
+div#container {
+    
+}
+
+
+/* = Columnization
+--------------------------------------------------- */
+
+div#body {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 85px 0 40px 0;
+	background: transparent url('../images/bg-body.png') left top repeat-x;
+}
+
+
+div#body .content {
+	width: 65%;
+	margin-left: 0;
+    margin-right:40px;
+    padding: 0px;    
+	float: left;    
+	
+}
+
+div#body .sidebar {
+	width: 30%;
+	margin: 10px 0 0 0;
+    padding: 10px;
+	float: left;    
+}
+
+
+@media screen and (max-width:900px){
+    
+    div#body{
+        width:100%;
+        background:none;
+        overflow:hidden;
+        padding: 10px 0 10px 0;
+    }
+    
+    div#body .content {
+        width: 90%;
+        text-align: left;
+        margin: 50px 10px 5px 10px;
+        padding: 5px 10px;        
+    }
+    
+    div#body .sidebar {
+        width: 90%;
+        text-align: left;
+        margin: 5px 10px;
+        padding: 5px 20px;        
+    }
+
+    img {
+        width: 95%;
+        height:auto;
+    }
+}
+
+@media screen and (min-width:901px) and (max-width:1367px) {
+    
+    div#body {
+        width: 100%;
+        background:none;
+        overflow:hidden;
+        padding: 10px 0 10px 0;                
+    }
+
+    div#container #container-pad {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    
+    div#body .content {
+        width: 60%;
+        margin-left: 20px;
+        margin-right:20px; 
+        overflow: hidden;          
+        
+    }
+    
+    div#body .sidebar {
+        width: 30%;        
+        margin-right:10px; 
+        overflow: hidden;        
+    }
+    
+    
+}
+
+
